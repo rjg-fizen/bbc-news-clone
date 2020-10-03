@@ -1,0 +1,71 @@
+/* CSS Reset */
+html, body, p, h1, h2, h3, h4, h5, ul, li { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Using auto margins to horizontally center content
+   I did not use margin: 0 auto; or margin: auto because
+   I don't want to affect top and bottom margins with this class. */
+.center { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear-float { 
+    clear: both;
+}
+
+.horizontal-nav { 
+    list-style-type: none;
+}
+
+.horizontal-nav>li { 
+    float: left;
+}
+
+
+header { 
+    width: 100%; 
+    height: 35px;
+}
+
+
+
+
+nav { 
+    width: 1000px;
+}
+
+
+#header-nav>ul>li { 
+    padding: 10px;
+    height: 20px;
+    border-right: 1px #ccc solid;
+}
+
+#header-nav>ul>li:first-child { 
+    background: url("/assets/blq-orbit-blocks_grey.svg") no-repeat center center;
+    width: 100px;
+}
+
+#header-nav>ul>li:last-child { 
+    border-right: none;
+}
+
+#header-nav #sign-in { 
+    display: block;
+    width: 100px;
+}
+
+#sub-header { 
+    background-color: #bb1919;
+    height: 56px;
+}
+
+#news-title { 
+    width: 1000px;
+    padding: 10px;
+    padding-left: 40px;
+    color: #fff
+}
