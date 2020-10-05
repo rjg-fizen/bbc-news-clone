@@ -160,12 +160,19 @@ header {
 #search {
   background-color: #ccc;
   border: none;
-  height: 22px;
+  height: 23px;
 }
 
 #search-icon {
   height: 22px;
   background-color: #ccc;
+  margin-top: 5px;
+}
+
+#search-icon img { 
+  height: 16px;
+  padding: 2px;
+  padding-top: 0px;
 }
 
 .small-top-margin {
