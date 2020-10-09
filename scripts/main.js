@@ -8,7 +8,6 @@ let menuExpanded = false;
 moreButton.onclick = () => { 
     if (!menuExpanded)
     {
-        
         moreMenu.classList.replace('hide-menu', 'show-menu');
         setTimeout(() => { 
             moreMenuUl.style.display = 'block';
@@ -24,7 +23,6 @@ moreButton.onclick = () => {
         setTimeout(() => { 
             subHeader.style.height = '90px';
         }, 400)
-
 
         moreMenuUl.style.display = 'none';
         menuExpanded = false;
