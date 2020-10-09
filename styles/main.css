@@ -192,6 +192,7 @@ header {
 
 #header-nav #more a { 
   margin-right: 40px;
+  pointer-events: none;
 }
 
 #search {
@@ -215,8 +216,37 @@ header {
 
 #sub-header {
   background-color: #bb1919;
-  height: 90px;
+}
 
+.grow-sub-header { 
+  animation: growSubHeader .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes growSubHeader { 
+  0% { 
+    height: 90px
+  }
+
+  100% { 
+    height: 140px;
+  }
+}
+
+
+.shrink-sub-header { 
+  animation: shrinkSubHeader .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrinkSubHeader { 
+  0% { 
+    height: 140px;
+  }
+
+  100% { 
+    height: 90px;
+  }
 }
 
 #more-menu { 
