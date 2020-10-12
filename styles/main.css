@@ -93,6 +93,11 @@ a:visited {
   margin-top: 5px;
 }
 
+.medium-bottom-border { 
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+
 .medium-left-margin {
   margin-left: 15px;
 }
@@ -105,6 +110,11 @@ a:visited {
 .show-menu { 
   animation: showMenu .5s;
   animation-fill-mode: forwards;
+}
+
+.large-bold-text { 
+  font-size: 2.2em;
+  font-weight: 700;
 }
 
 @keyframes showMenu { 
@@ -151,7 +161,6 @@ a:visited {
 /* header component */
 header {
   width: 100%;
-  height: 180px;
 }
 
 #header-nav > ul > li {
@@ -300,4 +309,33 @@ header {
   color: #fff;
 }
 
+#tech-menu-item { 
+  border-bottom: 4px #fff solid;
+}
+
+#content-heading { 
+  font-weight: 500;
+  margin: 15px;
+  width: 2.2em;
+}
+
+#main-article { 
+  color: #5a5a5a;
+}
+
+#main-article img { 
+  width: 630px;
+  height: 340px;
+  margin: 20px;
+}
+
+#main-article img:hover + div>.large-bold-text, 
+#main-article div>.large-bold-text:hover { 
+  text-decoration: underline;
+}
+
+#main-article p { 
+  margin-top: 20px;
+  width: 250px;
+}
 
