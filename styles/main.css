@@ -329,8 +329,10 @@ header {
   margin: 20px;
 }
 
-#main-article img:hover + div>.large-bold-text, 
-#main-article div>.large-bold-text:hover { 
+img:hover + div>.large-bold-text, 
+div>.large-bold-text:hover,
+.article img:hover + div, 
+.article h3:hover { 
   text-decoration: underline;
 }
 
@@ -338,4 +340,27 @@ header {
   margin-top: 20px;
   width: 250px;
 }
+
+
+#tiled-articles { 
+  margin-left: 20px;
+  color: #5a5a5a;
+}
+
+#tiled-articles .article img { 
+  width: 305px;
+  height: 170px;
+}
+
+.article { 
+  float: left;
+  margin-right: 20px;
+  width: 305px;
+  margin-bottom: 50px;
+}
+
+.article h3 { 
+  margin-bottom: 10px;
+}
+
 
