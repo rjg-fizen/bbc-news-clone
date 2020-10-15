@@ -93,6 +93,11 @@ a:visited {
   margin-top: 5px;
 }
 
+.medium-bottom-border { 
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+
 .medium-left-margin {
   margin-left: 15px;
 }
@@ -105,6 +110,11 @@ a:visited {
 .show-menu { 
   animation: showMenu .5s;
   animation-fill-mode: forwards;
+}
+
+.large-bold-text { 
+  font-size: 2.2em;
+  font-weight: 700;
 }
 
 @keyframes showMenu { 
@@ -151,7 +161,6 @@ a:visited {
 /* header component */
 header {
   width: 100%;
-  height: 180px;
 }
 
 #header-nav > ul > li {
@@ -298,6 +307,60 @@ header {
 
 #sub-menu li a { 
   color: #fff;
+}
+
+#tech-menu-item { 
+  border-bottom: 4px #fff solid;
+}
+
+#content-heading { 
+  font-weight: 500;
+  margin: 15px;
+  width: 2.2em;
+}
+
+#main-article { 
+  color: #5a5a5a;
+}
+
+#main-article img { 
+  width: 630px;
+  height: 340px;
+  margin: 20px;
+}
+
+img:hover + div>.large-bold-text, 
+div>.large-bold-text:hover,
+.article img:hover + div, 
+.article h3:hover { 
+  text-decoration: underline;
+}
+
+#main-article p { 
+  margin-top: 20px;
+  width: 250px;
+}
+
+
+#tiled-articles { 
+  margin-left: 20px;
+  color: #5a5a5a;
+}
+
+#tiled-articles .article img { 
+  width: 305px;
+  height: 170px;
+}
+
+.article { 
+  float: left;
+  margin-right: 20px;
+  width: 305px;
+  margin-bottom: 50px;
+}
+
+.article h3 { 
+  margin-bottom: 10px;
 }
 
 
